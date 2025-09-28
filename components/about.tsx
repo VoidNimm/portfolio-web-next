@@ -19,30 +19,31 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
+        I am a <span className="font-medium">Junior Full-Stack Developer</span>{" "}
+        with a background in{" "}
+        <span className="font-medium">Software Engineering (RPL)</span>. I have
+        hands-on experience building{" "}
+        <span className="font-medium">web applications</span> such as laundry
+        management systems, school canteen platforms, and event management
+        tools, as well as developing
+        <span className="font-medium">2D games</span>. My core stack includes{" "}
         <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
+          Next.js, TypeScript, Tailwind CSS, Prisma, and Supabase
         </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        , and I also have experience with{" "}
+        <span className="font-medium">PHP, MySQL, and Bootstrap</span>. I enjoy
+        solving problems, creating scalable solutions, and delivering
+        interactive user experiences. I am currently looking for an opportunity
+        to grow as a{" "}
+        <span className="font-medium">Junior Full-Stack Developer</span>.
       </p>
 
       <p>
         <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
+        video games, watching movies, and exercise like calisthenics. I also enjoy{" "}
         <span className="font-medium">learning new things</span>. I am currently
         learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        <span className="font-medium">next js and react.</span>
       </p>
     </motion.section>
   );
