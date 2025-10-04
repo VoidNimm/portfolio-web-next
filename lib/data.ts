@@ -105,6 +105,7 @@ export const projectsData = [
       "A modern laundry management web application with CRUD features, authentication, and transaction management.",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "Prisma", "Supabase PostgreSQL"],
     imageUrl: laundryNextImg,
+    link: "http://laundry-management-nine.vercel.app/",
   },
   {
     title: "Laundry Management App (PHP)",
@@ -112,6 +113,7 @@ export const projectsData = [
       "A web-based laundry management application built with PHP and MySQL, featuring CRUD operations and simple reporting.",
     tags: ["PHP", "MySQL", "HTML", "CSS", "Bootstrap"],
     imageUrl: laundryPhpImg,
+    link: "https://github.com/VoidNimm/Laundry-App.git",
   },
   {
     title: "School Canteen System",
@@ -119,6 +121,7 @@ export const projectsData = [
       "Designed and developed a school canteen web system with features for transactions, reports, discounts, and payment status tracking.",
     tags: ["PHP", "MySQL", "Bootstrap", "CSS", "JavaScript"],
     imageUrl: canteenImg,
+    link: "https://github.com/VoidNimm/KantinSekolah.git",
   },
   {
     title: "Eventastic",
@@ -126,6 +129,7 @@ export const projectsData = [
       "A web application for event management with registration, participant management, and real-time reporting features.",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
     imageUrl: eventasticImg,
+    link: "https://github.com/VoidNimm/Eventastic.git",
   },
   {
     title: "Personal Portfolio Website",
@@ -133,6 +137,7 @@ export const projectsData = [
       "Built a personal portfolio website showcasing projects, skills, and contact information with responsive design and interactive animations.",
     tags: ["Framer Only"],
     imageUrl: portfolioImg,
+    link: "https://nimghanim.my.id",
   },
 ] as const;
 

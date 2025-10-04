@@ -10,6 +10,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import ganteng from "@/public/GANTENG.jpeg";
+import CircularText from './CircularText';
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -23,23 +24,28 @@ export default function Intro() {
     >
       <div className="flex items-center justify-center">
         <div className="relative">
-          <motion.div
+                    <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
-              type: "tween",
+              type: 'tween',
               duration: 0.2,
             }}
           >
-            <Image
-              src={ganteng}
-              alt="Akmal Ghanim portrait"
-              width="192"
-              height="192"
-              quality="95"
-              priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
-            />
+            <div className="relative">
+              <Image
+                src={ganteng}
+                alt="Akmal Ghanim portrait"
+                width="192"
+                height="192"
+                quality="95"
+                priority={true}
+                className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              />
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <CircularText text="AKMAL*GHANIM*" />
+              </div>
+            </div>
           </motion.div>
 
           <motion.span
@@ -66,7 +72,7 @@ export default function Intro() {
         <span className="font-bold">Hello, I'm Akmal Ghanim.</span> I'm a{" "}
         <span className="font-bold">Junior Full-Stack Developer</span> with{" "}
         <span className="font-bold">2 years</span> of experience in school. I
-        enjoy building <span className="italic">sites & apps</span>. My focus is{" "}
+        enjoy building <span className="italic">web apps</span>. My focus is{" "}
         <span className="underline">React (Next.js)</span>.
       </motion.h1>
 
@@ -91,7 +97,7 @@ export default function Intro() {
         </Link>
 
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack"
           href="/Akmal_Ghanim_CV.pdf"
           download
         >
@@ -101,15 +107,7 @@ export default function Intro() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 px-4">
           <a
-            className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-            href="https://linkedin.com"
-            target="_blank"
-          >
-            <BsLinkedin />
-          </a>
-
-          <a
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack"
             href="https://github.com"
             target="_blank"
           >
